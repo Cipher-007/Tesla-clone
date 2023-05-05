@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "GothamSSm_Book";
+  src: url("../../public/GothamSSm-Book_Web.woff2");
+}
+@font-face {
+  font-family: "GothamSSm_Medium";
+  src: url("../../public/GothamSSm-Medium_Web.woff2");
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
