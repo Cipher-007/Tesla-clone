@@ -1,3 +1,17 @@
+const firstClassName = {
+  bg: "transparent",
+  text: "white",
+  width: "235px",
+  borderColor: "rgb(255 255 255)",
+};
+
+const secondClassName = {
+  bg: "#222222",
+  text: "white",
+  width: "235px",
+  borderColor: "transparent",
+};
+
 import Section from "@/components/Section";
 
 const model = {
@@ -9,9 +23,9 @@ const model = {
   buttons: [
     {
       title: "Order Now",
-      className: "bg-transparent border-2 border-white text-white w-[235px]",
+      style: firstClassName,
     },
-    { title: "Demo Drive", className: "bg-[#222222] text-white w-[235px]" },
+    { title: "Demo Drive", style: secondClassName },
   ],
   bgImage:
     "https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Model-X-Main-Hero-Desktop-LHD",

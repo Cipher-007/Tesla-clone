@@ -3,7 +3,6 @@ import Title from "./Title";
 
 const Section = ({
   title,
-  className,
   secondText,
   bgImage,
   underline,
@@ -15,7 +14,7 @@ const Section = ({
       style={{
         backgroundImage: `url(${bgImage})`,
       }}
-      className='h-screen bg-center bg-cover snap-start snap-always flex flex-col items-center justify-between font-GothamSSm_Medium'
+      className='flex h-screen snap-start snap-always flex-col items-center justify-between bg-cover bg-center font-GothamSSm_Medium'
     >
       <Title title={title} secondText={secondText} underline={underline} />
       <Body buttons={buttons} showArrow={showArrow} />

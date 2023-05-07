@@ -1,6 +1,7 @@
 import List from "../Header/List";
 
-const liclassName = 'hover:rounded-md hover:bg-opacity-70 hover:backdrop-blur-3xl hover:backdrop-brightness-90';
+const liclassName =
+  "hover:rounded-md hover:bg-opacity-70 hover:backdrop-blur-3xl hover:backdrop-brightness-90";
 const linkclassName = "px-2 py-1 flex w-max";
 
 const Links = [
@@ -57,7 +58,7 @@ const Links = [
 
 const MidNav = () => {
   return (
-    <ol className='basis-[723px] flex flex-row px-2 items-center'>
+    <ol className='flex basis-[723px] flex-row items-center px-2'>
       {Links.map((model) => (
         <List
           key={model.id}

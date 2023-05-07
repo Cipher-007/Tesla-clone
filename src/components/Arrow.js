@@ -1,6 +1,6 @@
 const Arrow = () => {
   return (
-    <div className='basis-12 bottom-4 animate-bounce'>
+    <div className='bottom-4 basis-12 animate-bounce'>
       <svg
         xmlns='http://www.w3.org/2000/svg'
         width='36'

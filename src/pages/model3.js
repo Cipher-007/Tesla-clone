@@ -1,3 +1,17 @@
+const firstClassName = {
+  bg: "transparent",
+  text: "white",
+  width: "235px",
+  borderColor: "rgb(255 255 255)",
+};
+
+const secondClassName = {
+  bg: "#222222",
+  text: "white",
+  width: "235px",
+  borderColor: "transparent",
+};
+
 import Section from "@/components/Section";
 
 const model = {
@@ -9,9 +23,9 @@ const model = {
   buttons: [
     {
       title: "Order Now",
-      className: "bg-transparent border-2 border-white text-white w-[235px]",
+      style: firstClassName,
     },
-    { title: "View Inventory", className: "bg-[#222222] text-white w-[235px]" },
+    { title: "View Inventory", style: secondClassName },
   ],
   bgImage:
     "https://tesla-cdn.thron.com/delivery/public/image/tesla/5a7b3001-249f-4065-a330-4ea6a17ccf7b/bvlatuR/std/2560x1708/Model-3-Main-Hero-Desktop-LHD",

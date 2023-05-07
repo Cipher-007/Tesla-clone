@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
     <>
       {title[pathname] && <AnnouncementBar title={announcementTitle} />}
       <Header />
-      <main className='h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth'>
+      <main className='h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth'>
         {children}
       </main>
     </>

@@ -17,9 +17,9 @@ const Header = ({}) => {
   const Color = black.includes(pathname) ? "black" : "white";
 
   return (
-    <div className='absolute w-screen top-[52px]'>
+    <div className='absolute top-[52px] w-screen'>
       <header
-        className={`flex flex-row h-14 text-sm font-medium font-GothamSSm_Medium text-${Color}`}
+        className={`flex h-14 flex-row font-GothamSSm_Medium text-sm font-medium text-${Color}`}
       >
         <LeftNav />
         <MidNav />

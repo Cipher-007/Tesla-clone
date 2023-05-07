@@ -8,7 +8,6 @@ const HomeScreen = () => {
         <Section
           key={model.id}
           title={model.title}
-          className={model.className}
           bgImage={model.bgImage}
           secondText={model.secondText}
           underline={model.underLine}

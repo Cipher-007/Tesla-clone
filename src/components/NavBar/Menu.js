@@ -22,11 +22,11 @@ const List = [
 
 const Menu = ({ onClose }) => {
   return (
-    <div className='flex flex-col bg-white h-screen fixed right-0 top-0 w-[311px] z-50 font-GothamSSm_Book'>
-      <div className='basis-20 flex justify-end p-5'>
-        <button className="p-2" onClick={onClose}>
+    <div className='fixed right-0 top-0 z-50 flex h-screen w-[311px] flex-col bg-white font-GothamSSm_Book'>
+      <div className='flex basis-20 justify-end p-5'>
+        <button className='p-2' onClick={onClose}>
           <svg
-            className='w-6 h-6'
+            className='h-6 w-6'
             viewBox='0 0 24 24'
             xmlns='http://www.w3.org/2000/svg'
           >
@@ -37,15 +37,15 @@ const Menu = ({ onClose }) => {
           </svg>
         </button>
       </div>
-      <section className='pt-1 pb-12 px-8 overflow-y-scroll'>
-        <ol className='flex flex-col basis-full'>
+      <section className='overflow-y-scroll px-8 pb-12 pt-1'>
+        <ol className='flex basis-full flex-col'>
           {List.map((el) => (
             <MenuElement key={el} title={el} />
           ))}
           <li className='flex'>
             <div className='flex flex-row'>
               <svg
-                className='w-6 h-6 p-[1px]'
+                className='h-6 w-6 p-[1px]'
                 viewBox='0 0 24 24'
                 xmlns='http://www.w3.org/2000/svg'
               >
@@ -58,7 +58,7 @@ const Menu = ({ onClose }) => {
                 <div>
                   <strong>United States</strong>
                 </div>
-                <a className="text-xs">English</a>
+                <a className='text-xs'>English</a>
               </div>
             </div>
           </li>

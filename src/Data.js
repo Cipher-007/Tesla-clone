@@ -1,19 +1,25 @@
-const firstClassName = "bg-[#171A20cc] text-white w-[264px]";
-const secondClassName = "bg-[#F4F4F4A6] text-[#393c41] w-[264px]";
+const firstClassName = {
+  bg: "#171A20cc",
+  text: "white",
+  width: "264px",
+  borderColor: "transparent",
+};
 
+const secondClassName = {
+  bg: "#F4F4F4A6",
+  text: "#393c41",
+  width: "264px",
+  borderColor: "transparent",
+};
 export const Data = [
   {
     id: "1",
     title: "Model S",
-    className: "h-12 text-center px-6 mt-[164.4px] w-full",
     secondText: "View Inventory",
     underLine: true,
     buttons: [
-      { title: "Order Now", className: firstClassName },
-      {
-        title: "Demo Drive",
-        className: secondClassName,
-      },
+      { id: "p1", title: "Order Now", style: firstClassName },
+      { id: "p2", title: "Demo Drive", style: secondClassName },
     ],
     bgImage:
       "https://tesla-cdn.thron.com/delivery/public/image/tesla/898c2038-c428-452c-84bf-034d5c48ca8e/bvlatuR/std/4096x2560/Model-S-homepage-desktop",
@@ -22,14 +28,14 @@ export const Data = [
   {
     id: "2",
     title: "Model 3",
-    className: "h-12 text-center px-6 mt-[164.4px] w-full",
     secondText: "View Inventory",
     underLine: true,
     buttons: [
-      { title: "Order Now", className: firstClassName },
+      { id: "p1", title: "Order Now", style: firstClassName },
       {
+        id: "p2",
         title: "Demo Drive",
-        className: secondClassName,
+        style: secondClassName,
       },
     ],
     bgImage:
@@ -38,14 +44,14 @@ export const Data = [
   {
     id: "3",
     title: "Model X",
-    className: "h-12 text-center px-6 mt-[164.4px] w-full",
     secondText: "View Inventory",
     underLine: true,
     buttons: [
-      { title: "Order Now", className: firstClassName },
+      { id: "p1", title: "Order Now", style: firstClassName },
       {
+        id: "p2",
         title: "Demo Drive",
-        className: secondClassName,
+        style: secondClassName,
       },
     ],
     bgImage:
@@ -54,13 +60,13 @@ export const Data = [
   {
     id: "4",
     title: "Model Y",
-    className: "h-12 text-center px-6 mt-[164.4px] w-full",
     secondText: "View Inventory",
     buttons: [
-      { title: "Order Now", className: firstClassName },
+      { id: "p1", title: "Order Now", style: firstClassName },
       {
+        id: "p2",
         title: "Demo Drive",
-        className: secondClassName,
+        style: secondClassName,
       },
     ],
     underLine: true,
@@ -70,13 +76,13 @@ export const Data = [
   {
     id: "5",
     title: "Solar Panels",
-    className: "h-12 text-center px-6 mt-[164.4px] w-full",
     secondText: "Lowest Cost Solar Panels in America",
     buttons: [
-      { title: "Order Now", className: firstClassName },
+      { id: "p1", title: "Order Now", style: firstClassName },
       {
+        id: "p2",
         title: "Demo Drive",
-        className: secondClassName,
+        style: secondClassName,
       },
     ],
     underLine: false,
@@ -86,13 +92,13 @@ export const Data = [
   {
     id: "6",
     title: "Solar Roof",
-    className: "h-12 text-center px-6 mt-[164.4px] w-full",
     secondText: "Produce Clean Energy From Your Roof",
     buttons: [
-      { title: "Order Now", className: firstClassName },
+      { id: "p1", title: "Order Now", style: firstClassName },
       {
+        id: "p2",
         title: "Demo Drive",
-        className: secondClassName,
+        style: secondClassName,
       },
     ],
     underLine: false,
@@ -102,9 +108,19 @@ export const Data = [
   {
     id: "7",
     title: "Accessories",
-    className: "h-12 text-center px-6 mt-[164.4px] w-full",
     secondText: null,
-    buttons: [{ title: "Shop Now", className: "bg-[#171A20] text-white" }],
+    buttons: [
+      {
+        id: "p1",
+        title: "Shop Now",
+        style: {
+          bg: "#171A20",
+          text: "white",
+          width: "264px",
+          borderColor: "transparent",
+        },
+      },
+    ],
     underLine: false,
     bgImage:
       "https://tesla-cdn.thron.com/delivery/public/image/tesla/dd739764-bcaa-4263-9488-8c73bc9fb046/bvlatuR/std/0x0/dd739764-bcaa-4263-9488-8c73bc9fb046",

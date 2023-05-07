@@ -1,3 +1,10 @@
+const firstClassName = {
+  bg: "transparent",
+  text: "white",
+  width: "235px",
+  borderColor: "rgb(255 255 255)",
+};
+
 import Section from "@/components/Section";
 
 const model = {
@@ -9,7 +16,7 @@ const model = {
   buttons: [
     {
       title: "Order Now",
-      className: "bg-transparent border-2 border-white text-white w-[235px]",
+      style: firstClassName,
     },
   ],
   bgImage:

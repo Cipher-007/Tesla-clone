@@ -1,8 +1,16 @@
-const Button = ({ title, className }) => {
+const Button = ({ title, style }) => {
+  const btclass =
+    "h-10 rounded-md border-2 border-transparent px-6 py-2 text-sm";
   return (
-    <div className='flex text-center mb-0 gap-8 font-GothamSSm_Medium'>
+    <div className='mb-0 flex gap-8 text-center font-GothamSSm_Medium'>
       <a
-        className={`h-10 py-2 px-6 rounded-md text-sm border-2 border-transparent ${className}`} //235px
+        style={{
+          backgroundColor: `${style.bg}`,
+          color: `${style.text}`,
+          width: `${style.width}`,
+          borderColor: `${style.borderColor}`,
+        }}
+        className={btclass} //235px
       >
         {title}
       </a>

@@ -1,3 +1,17 @@
+const firstClassName = {
+  bg: "transparent",
+  text: "white",
+  width: "235px",
+  borderColor: "rgb(255 255 255)",
+};
+
+const secondClassName = {
+  bg: "#222222",
+  text: "white",
+  width: "235px",
+  borderColor: "transparent",
+};
+
 import Section from "@/components/Section";
 const model = {
   id: "1",
@@ -5,10 +19,13 @@ const model = {
   className: "h-12 text-center px-6 mt-[164.4px] w-full",
   secondText: "Plaid",
   buttons: [
-    { title: "Order Now", className: "bg-transparent border-2 border-white text-white w-[235px]" },
+    {
+      title: "Order Now",
+      style: firstClassName,
+    },
     {
       title: "Demo Drive",
-      className: "bg-[#222222] text-white w-[235px]",
+      style: secondClassName,
     },
   ],
   bgImage:
